@@ -1,0 +1,146 @@
+html, body {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+	background: rgba(0, 0, 0, 0);
+  }
+  
+  .music-player {
+	width: 300px;
+	margin: 20px auto;
+  }
+  
+  .music-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+	padding: 20px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background: linear-gradient(
+	  rgba(45, 16, 30, 0.767),
+	  rgba(225, 118, 159, 0.767)
+	),
+	url('Media/riverwood2.jpg');
+	background-size: cover;
+	background-position: center;
+  }
+  
+  .music-image img {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+  }
+  
+  .music-info {
+	text-align: center;
+	margin: 10px 0;
+	color: #fff;
+  }
+  
+  .music-info h3 {
+	margin: 0;
+	font-size: 16px;
+  }
+  
+  .music-info p {
+	margin: 0;
+	font-size: 12px;
+	opacity: 0.7;
+  }
+  
+  .timeline {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 10px 0;
+  }
+  
+  .timeline span {
+	font-size: 12px;
+  }
+  
+  #seek-bar {
+	flex-grow: 1;
+	margin: 0 10px;
+  }
+  
+  .controls {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 15px;
+  }
+  
+  .control-btn {
+	background: none;
+	border: none;
+	color: #ffffff;
+	font-size: 20px;
+	cursor: pointer;
+	outline: none;
+	transition: transform 0.2s ease;
+  }
+
+  #prev, #next{
+	background: none;
+	border: none;
+	color: #e5e5e592;
+	font-size: 20px;
+	cursor: pointer;
+	outline: none;
+	transition: transform 0.2s ease;
+  }
+  
+  #play:hover, #pause:hover {
+	transform: scale(1.2);
+  }
+  
+  .volume {
+	margin-top: 10px;
+	width: 80%;
+  }
+  
+  #volume-slider {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 6px;
+	background: linear-gradient(to right, #ffc2d7, #ffa8dd);
+	border-radius: 3px;
+	outline: none;
+	cursor: pointer;
+  }
+
+  
+  #volume-slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 35px;
+	height: 35px;
+	background: url('Media/heart.png') no-repeat center;
+	background-size: contain;
+	border: none;
+	cursor: pointer;
+  }
+  
+  #volume-slider::-moz-range-thumb {
+	width: 24px;
+	height: 24px;
+	background: url('Media/heart.png') no-repeat center;
+	background-size: contain;
+	border: none;
+	cursor: pointer;
+  }
+  
+  #volume-slider::-ms-thumb {
+	width: 24px;
+	height: 24px;
+	background: url('Media/heart.png') no-repeat center;
+	background-size: contain;
+	border: none;
+	cursor: pointer;
+  }
+  
+  

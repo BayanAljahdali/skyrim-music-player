@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<div class="music-player">
+		<div class="music-card">
+		  <div class="music-image">
+			<img id="album-art" src="Media/pinkSkyrim2.png" alt="Album Art">
+		  </div>
+		  <div class="music-info">
+			<h3 id="song-title">Secunda</h3>
+		  </div>
+		  <div class="controls">
+			<button id="prev" class="control-btn">⏮</button>
+			<button id="play" class="control-btn">▶</button>
+			<button id="pause" class="control-btn" style="display:none;">⏸</button>
+			<button id="next" class="control-btn">⏭</button>
+		  </div>
+		  <div class="volume">
+			<input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5">
+		  </div>
+		</div>
+	  </div>
+
+
+	  <div class="music-player">
+		
+	  </div>
+	  <audio id="audio-player" src="Media/Secunda.mp3"></audio>
+	  
+  <script src="script.js"></script>
+</body>
+</html>
