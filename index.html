@@ -16,10 +16,18 @@
 			<h3 id="song-title">Secunda</h3>
 		  </div>
 		  <div class="controls">
-			<button id="prev" class="control-btn">⏮</button>
-			<button id="play" class="control-btn">▶</button>
-			<button id="pause" class="control-btn" style="display:none;">⏸</button>
-			<button id="next" class="control-btn">⏭</button>
+			<button id="prev" class="control-btn">
+				<img src="Media/previouspink.png" alt="Previous">
+			  </button>
+			  <button id="play" class="control-btn">
+				<img src="Media/playpink.png" alt="Play">
+			  </button>
+			  <button id="pause" class="control-btn" style="display:none;">
+				<img src="Media/pausePink.png" alt="Pause">
+			  </button>
+			  <button id="next" class="control-btn">
+				<img src="Media//nextpink.png" alt="Next">
+			  </button>
 		  </div>
 		  <div class="volume">
 			<input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5">
@@ -31,7 +39,7 @@
 	  <div class="music-player">
 		
 	  </div>
-	  <audio id="audio-player" src="Media/Secunda.mp3"></audio>
+	  <audio id="audio-player" src="Media/Secunda.mp3" loop></audio>
 	  
   <script src="script.js"></script>
 </body>
